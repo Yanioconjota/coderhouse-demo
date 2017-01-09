@@ -1,0 +1,150 @@
+/*
+Import
+*/
+@import 'variables';
+@import 'fontface';
+@import 'mixins';
+@import 'icons';
+
+/*
+Positioning classes
+*/
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.vtop {
+  @extend .vcenter;
+  align-items: flex-start;
+}
+
+.vbottom {
+  @extend .vcenter;
+  align-items: flex-end;
+}
+
+/*
+Background
+*/
+
+.gradient {
+  @include gradient ($aqua, $blue);
+  @extend .color-white;
+}
+
+/*
+CSS Rules
+*/
+
+.full-size {
+  width: $full;
+  height: $full;
+}
+
+.bar-height {
+  min-height: 4em;
+  background-color: $aqua;
+  position: relative;
+}
+
+.color-white {
+  color:$white;
+}
+
+.fa-check {color: $palegreen;}
+
+.product {
+  * {color: $white;}
+  [class*="col-"] {
+    padding: 0 $unit/5;
+  }
+  .number {
+    @extend .vcenter;
+    background-color: $aqua;
+    justify-content: center;
+    font-size: 2.82em;
+  }
+  .title {
+    @extend .vcenter;
+    @extend .bar-height;
+    padding-left: $unit;
+  }
+  [class*="col-"] {
+    margin-bottom: $unit/5;
+  }
+}
+
+/*
+General styles
+*/
+
+body {
+  @extend .full-size;
+  font-family:$regular;
+  text-transform: uppercase;
+  hr {
+    border-color: $aqua;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $bold;
+  color: $aqua;
+}
+
+section {
+  margin: $unit*2 0;
+  .row {
+    margin-bottom: $unit*2;
+  }
+}
+
+
+nav.navbar-default{
+  background-color: $transparent;
+  border-color: $transparent;
+  margin-top: $unit;
+  margin-bottom: $unit;
+}
+
+.brand {
+  height: inherit;
+  position: relative;
+  top: -15px;
+}
+
+.wrapper {
+}
+
+.wrapper-alt {
+  @extend .gradient;
+  .table-item {
+    margin: 0;
+  }
+  .container {
+    padding: 1em 0;
+  }
+}
+
+.menu-buttons {
+  height: $button-height;
+  float: right;
+  * {color: $white;}
+  .btn-default {
+    background-color: $transparent;
+    border-color: $white;
+    text-transform: uppercase;
+    @include border-radius(0px);
+    padding: 1em 2.5em;
+    margin: 0 2em 0 0;
+    &:active:hover,
+    &:active,
+    &:hover {
+      color: $white;
+      border-color: $white;
+      background-color: $ltwhite;
+    }
+  }
+}

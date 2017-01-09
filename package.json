@@ -1,0 +1,32 @@
+{
+  "name": "coderhouse-demo",
+  "version": "1.0.0",
+  "description": "List of products using bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yanioconjota/coderhouse-demo.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "html5",
+    "css3",
+    "sass",
+    "web",
+    "front-end"
+  ],
+  "author": "Janio Isacura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yanioconjota/coderhouse-demo/issues"
+  },
+  "homepage": "https://github.com/Yanioconjota/coderhouse-demo#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery-1x": "^1.12.1"
+  }
+}
