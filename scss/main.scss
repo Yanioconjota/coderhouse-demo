@@ -56,9 +56,11 @@ CSS Rules
 .fa-check {color: $palegreen;}
 
 .product {
+  @extend .vcenter;
   * {color: $white;}
   [class*="col-"] {
-    padding: 0 $unit/5;
+    margin: $unit/10;
+    margin-bottom: $unit/5;
   }
   .number {
     @extend .vcenter;
@@ -71,8 +73,9 @@ CSS Rules
     @extend .bar-height;
     padding-left: $unit;
   }
-  [class*="col-"] {
-    margin-bottom: $unit/5;
+  .img-container {
+    @extend .bar-height;
+    overflow: hidden;
   }
 }
 
