@@ -45,7 +45,7 @@ Resumen screen icons
 /*
 Positioning classes
 */
-.vcenter, .vtop, .vbottom, .product, .product .number, .product .title {
+.vcenter, .vtop, .vbottom, .mas-info, .product, .product > * {
   display: flex;
   align-items: center; }
 
@@ -56,48 +56,7 @@ Positioning classes
   align-items: flex-end; }
 
 /*
-Background
-*/
-.gradient, .wrapper-alt {
-  background: -moz-linear-gradient(left, #6eb7c2 0%, #6e96c2 100%);
-  background: -webkit-gradient(linear, right left, left bottom, color-stop(0%, #6eb7c2), color-stop(100%, #6e96c2));
-  background: -webkit-linear-gradient(left, #6eb7c2 0%, #6e96c2 100%);
-  background: -o-linear-gradient(left, #6eb7c2 0%, #6e96c2 100%); }
-
-/*
-CSS Rules
-*/
-.full-size, body {
-  width: 100%;
-  height: 100%; }
-
-.bar-height, .product .title, .product .img-container {
-  min-height: 4em;
-  background-color: #6eb7c2;
-  position: relative; }
-
-.color-white, .gradient, .wrapper-alt {
-  color: #FFF; }
-
-.fa-check {
-  color: #a3c26e; }
-
-.product * {
-  color: #FFF; }
-.product [class*="col-"] {
-  margin: 0.1em;
-  margin-bottom: 0.2em; }
-.product .number {
-  background-color: #6eb7c2;
-  justify-content: center;
-  font-size: 2.82em; }
-.product .title {
-  padding-left: 1em; }
-.product .img-container {
-  overflow: hidden; }
-
-/*
-General styles
+Custom Styles
 */
 body {
   font-family: "MuseoSans-500";
@@ -114,40 +73,61 @@ section {
   section .row {
     margin-bottom: 2em; }
 
-nav.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-  margin-top: 1em;
-  margin-bottom: 1em; }
-
-.brand {
-  height: inherit;
+nav.navbar-default .brand {
+  height: 2em;
   position: relative;
-  top: -15px; }
+  left: -1em;
+  top: -0.5em; }
 
-.wrapper-alt .table-item {
-  margin: 0; }
-.wrapper-alt .container {
-  padding: 1em 0; }
+.full-size, body {
+  width: 100%;
+  height: 100%; }
 
-.menu-buttons {
-  height: 5.7em;
-  float: right; }
-  .menu-buttons * {
+.bar-height, .product {
+  min-height: 4em;
+  height: 4em;
+  background-color: #6eb7c2;
+  position: relative; }
+
+.fa-check {
+  color: #a3c26e; }
+
+.product {
+  padding: 0;
+  height: 6em; }
+  .product > * {
+    min-height: inherit;
+    height: inherit; }
+  .product * {
     color: #FFF; }
-  .menu-buttons .btn-default {
+  .product .number {
+    background-color: #6eb7c2;
+    justify-content: center;
+    font-size: 2.82em;
+    height: 1em; }
+  .product .title {
+    padding-left: 1em; }
+  .product .img-wrapper {
     background-color: transparent;
-    border-color: #FFF;
-    text-transform: uppercase;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */
-    padding: 1em 2.5em;
-    margin: 0 2em 0 0; }
-    .menu-buttons .btn-default:active:hover, .menu-buttons .btn-default:active, .menu-buttons .btn-default:hover {
-      color: #FFF;
-      border-color: #FFF;
-      background-color: rgba(255, 255, 255, 0.15); }
+    margin-left: -1em;
+    overflow: hidden; }
+    .product .img-wrapper img {
+      width: 100%; }
+
+.mas-info {
+  justify-content: center; }
+
+.btn {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border-top: #6eb7c2;
+  border-right: #6eb7c2;
+  border-left: #6eb7c2;
+  border-bottom: #6eb7c2;
+  border-size: 1px;
+  border-style: solid;
+  color: #6eb7c2; }
 
 /*# sourceMappingURL=main.css.map */

@@ -26,61 +26,7 @@ Positioning classes
 }
 
 /*
-Background
-*/
-
-.gradient {
-  @include gradient ($aqua, $blue);
-  @extend .color-white;
-}
-
-/*
-CSS Rules
-*/
-
-.full-size {
-  width: $full;
-  height: $full;
-}
-
-.bar-height {
-  min-height: 4em;
-  background-color: $aqua;
-  position: relative;
-}
-
-.color-white {
-  color:$white;
-}
-
-.fa-check {color: $palegreen;}
-
-.product {
-  @extend .vcenter;
-  * {color: $white;}
-  [class*="col-"] {
-    margin: $unit/10;
-    margin-bottom: $unit/5;
-  }
-  .number {
-    @extend .vcenter;
-    background-color: $aqua;
-    justify-content: center;
-    font-size: 2.82em;
-  }
-  .title {
-    @extend .vcenter;
-    @extend .bar-height;
-    padding-left: $unit;
-  }
-  .img-container {
-    @extend .bar-height;
-    overflow: hidden;
-  }
-}
-
-/*
-General styles
+Custom Styles
 */
 
 body {
@@ -106,48 +52,70 @@ section {
 
 
 nav.navbar-default{
-  background-color: $transparent;
-  border-color: $transparent;
-  margin-top: $unit;
-  margin-bottom: $unit;
+  .brand {
+    height: $unit*2;
+    position: relative;
+    left: -$unit;
+    top:-$unit/2;
+  }
 }
 
-.brand {
-  height: inherit;
+.mas-info {
+  @extend .vcenter;
+}
+
+.full-size {
+  width: $full;
+  height: $full;
+}
+
+.bar-height {
+  min-height: $unit*4;
+  height: $unit*4;
+  background-color: $aqua;
   position: relative;
-  top: -15px;
 }
+.fa-check {color: $palegreen;}
 
-.wrapper {
-}
-
-.wrapper-alt {
-  @extend .gradient;
-  .table-item {
-    margin: 0;
+.product {
+  padding:0;
+  @extend .vcenter;
+  @extend .bar-height;
+  height: $unit*6;
+  > * {
+    @extend .vcenter;
+    min-height: inherit;
+    height: inherit;
   }
-  .container {
-    padding: 1em 0;
-  }
-}
-
-.menu-buttons {
-  height: $button-height;
-  float: right;
   * {color: $white;}
-  .btn-default {
+  .number {
+    background-color: $aqua;
+    justify-content: center;
+    font-size:2.82em;
+    height:1em;
+  }
+  .title {
+    padding-left: $unit;
+  }
+  .img-wrapper {
     background-color: $transparent;
-    border-color: $white;
-    text-transform: uppercase;
-    @include border-radius(0px);
-    padding: 1em 2.5em;
-    margin: 0 2em 0 0;
-    &:active:hover,
-    &:active,
-    &:hover {
-      color: $white;
-      border-color: $white;
-      background-color: $ltwhite;
+    margin-left:-$unit;
+    overflow: hidden;
+    img {
+      width: 100%;
     }
   }
+}
+
+.mas-info {
+  @extend .vcenter;
+  justify-content:center;
+}
+
+.btn {
+  @include border-radius(0);
+  @include border-input($aqua);
+  border-size:1px;
+  border-style:solid;
+  color:$aqua;
 }

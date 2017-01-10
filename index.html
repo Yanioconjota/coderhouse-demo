@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Demo - listado de productos</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" media="screen" charset="utf-8">
@@ -21,34 +21,264 @@
     <![endif]-->
   </head>
   <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="img/brand/ch-logo-black.svg" class="brand">
+          </a>
+        </div>
+      </div>
+    </nav>
     <section class="container">
-      <h1>listado de productos</h1>
       <div class="row">
-        <!-- product-->
+        <h3>Demo - listado de productos</h3>
+        <!-- product 1 -->
         <div class="col-xs-12 product">
-          <div class="col-xs-2 img-container">
-            <img src="img/alien-desktop.jpg" class="img-responsive" alt="Alienware desktop">
-          </div>
-          <div class="col-xs-1 number">
+          <div class="col-sm-1 col-xs-3 number">
             <div>1</div>
-            <div class="number">
-              
-            </div>
           </div>
-          <div class="col-xs-6 title">
-            <div>parto y recolección</div>
+          <div class="col-sm-2 col-xs-9 img-wrapper">
+            <img src="img/alien-desktop-1.jpg" alt="Alienware desktop">
+          </div>
+          <div class="col-xs-8 title">
+            <div>Alienware Alpha ASM100-9000BLK Mini Desktop</div>
           </div>
           <div class="col-xs-1 number">
-            <a href="javascript:void(0)">
+            <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
               <i class="fa fa-plus-circle"></i>
             </a>
           </div>
         </div>
-        <!-- //product-->
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="collapse" id="collapse-1">
+              <div class="well">
+                <h6>Alienware Alpha ASM100-9000BLK Mini Desktop (Intel Core i7-4785T 2.2GHz Processor, 8 GB DDR3L SDRAM, 1 TB HDD, Windows 10) Black</h6>
+                <p>Price: $874.98 & FREE Shipping</p>
+                <ul class="list-inline">
+                  <li><p>Rating: </p></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li>1024 votes</li>
+                </ul>
+                <div class="row portfolio">
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/alien-desktop-1.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/alien-desktop-2.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/alien-desktop-3.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/alien-desktop-5.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //product 1 -->
+        <!-- product 2-->
+        <div class="col-xs-12 product">
+          <div class="col-sm-1 col-xs-3 number">
+            <div>2</div>
+          </div>
+          <div class="col-sm-2 col-xs-9 img-wrapper">
+            <img src="img/alien-notebook-1.jpg" alt="Alienware notebook">
+          </div>
+          <div class="col-xs-8 title">
+            <div>Alienware AW15R3-10881SLV Laptop</div>
+          </div>
+          <div class="col-xs-1 number">
+            <a role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              <i class="fa fa-plus-circle"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="collapse" id="collapse-2">
+              <div class="well">
+                <h6>Alienware AW15R3-10881SLV Laptop (6th Generation i7, 16GB RAM, 256GB + 1TB HDD) NVIDIA GeForce GTX1070</h6>
+                <p>Price:  $2,399.00 & FREE Shipping</p>
+                <ul class="list-inline">
+                  <li><p>Rating: </p></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li>1024 votes</li>
+                </ul>
+                <div class="row portfolio">
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/alien-notebook-1.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/alien-notebook-2.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/alien-notebook-3.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/alien-notebook-5.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //product 2-->
+        <!-- product 3-->
+        <div class="col-xs-12 product">
+          <div class="col-sm-1 col-xs-3 number">
+            <div>3</div>
+          </div>
+          <div class="col-sm-2 col-xs-9 img-wrapper">
+            <img src="img/mouse-1.jpg" alt="Razer Naga Hex V2 MOBA Gaming Mouse">
+          </div>
+          <div class="col-xs-8 title">
+            <div>Razer Naga Hex V2 MOBA Gaming Mouse</div>
+          </div>
+          <div class="col-xs-1 number">
+            <a role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              <i class="fa fa-plus-circle"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="collapse" id="collapse-3">
+              <div class="well">
+                <h6>Razer Naga Hex V2 MOBA Gaming Mouse - 7 Button Mechanical Thumb Grid - Chroma Lighting - 16,000 DP</h6>
+                <p>Price:  $69.00 & FREE Shipping</p>
+                <ul class="list-inline">
+                  <li><p>Rating: </p></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li>1024 votes</li>
+                </ul>
+                <div class="row portfolio">
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/mouse-1.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/mouse-2.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/mouse-3.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/mouse-4.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //product 3-->
+        <!-- product 4-->
+        <div class="col-xs-12 product">
+          <div class="col-sm-1 col-xs-3 number">
+            <div>4</div>
+          </div>
+          <div class="col-sm-2 col-xs-9 img-wrapper">
+            <img src="img/auriculares-1.jpg" alt="SteelSeries Arctis 7 Wireless Gaming Headset">
+          </div>
+          <div class="col-xs-8 title">
+            <div>SteelSeries Arctis 7 Headset</div>
+          </div>
+          <div class="col-xs-1 number">
+            <a role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              <i class="fa fa-plus-circle"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="collapse" id="collapse-4">
+              <div class="well">
+                <h6>SteelSeries Arctis 7 Wireless Gaming Headset with DTS Headphone:X 7.1 Surround for PC, PlayStation 4, VR, Mac and Wired for Xbox One, Android and iOS - Black</h6>
+                <p>Price:  $149.00 & FREE Shipping</p>
+                <ul class="list-inline">
+                  <li><p>Rating: </p></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li>1024 votes</li>
+                </ul>
+                <div class="row portfolio">
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/auriculares-1.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/auriculares-2.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/auriculares-3.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="thumbnail">
+                      <img class="img-responsive" src="img/auriculares-4.jpg" alt="The awesome description">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //product 4-->
       </div>
-      <hr>
     </section>
-
+    <hr>
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12 mas-info">
+          <a href="http://janioisacura.com" class="btn btn-default" target="_blank">Mas sobre el profesor</a>
+        </div>
+      </div>
+    </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
