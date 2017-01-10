@@ -29,18 +29,31 @@ Positioning classes
 Custom Styles
 */
 
+
+.background-color {
+  background-color:$aqua;
+};
+
+.color {
+  color:$aqua;
+}
+
+.border-color {
+  border-color:$aqua;
+}
+
 body {
   @extend .full-size;
   font-family:$regular;
   text-transform: uppercase;
   hr {
-    border-color: $aqua;
+    @extend .border-color;
   }
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: $bold;
-  color: $aqua;
+  @extend .color;
 }
 
 section {
@@ -72,7 +85,7 @@ nav.navbar-default{
 .bar-height {
   min-height: $unit*4;
   height: $unit*4;
-  background-color: $aqua;
+  @extend .background-color;
   position: relative;
 }
 .fa-check {color: $palegreen;}
@@ -89,7 +102,6 @@ nav.navbar-default{
   }
   * {color: $white;}
   .number {
-    background-color: $aqua;
     justify-content: center;
     font-size:2.82em;
     height:1em;
@@ -114,8 +126,12 @@ nav.navbar-default{
 
 .btn {
   @include border-radius(0);
-  @include border-input($aqua);
   border-size:1px;
   border-style:solid;
-  color:$aqua;
+  @extend .color;
+  @extend .border-color;
+  &:hover {
+    @extend .color;
+    @extend .border-color;
+  }
 }

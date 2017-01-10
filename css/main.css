@@ -58,15 +58,21 @@ Positioning classes
 /*
 Custom Styles
 */
+.background-color, .bar-height, .product {
+  background-color: #65C4AE; }
+
+.color, h1, h2, h3, h4, h5, h6, .btn, .btn:hover {
+  color: #65C4AE; }
+
+.border-color, body hr, .btn, .btn:hover {
+  border-color: #65C4AE; }
+
 body {
   font-family: "MuseoSans-500";
   text-transform: uppercase; }
-  body hr {
-    border-color: #6eb7c2; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "MuseoSans-700";
-  color: #6eb7c2; }
+  font-family: "MuseoSans-700"; }
 
 section {
   margin: 2em 0; }
@@ -86,7 +92,6 @@ nav.navbar-default .brand {
 .bar-height, .product {
   min-height: 4em;
   height: 4em;
-  background-color: #6eb7c2;
   position: relative; }
 
 .fa-check {
@@ -101,7 +106,6 @@ nav.navbar-default .brand {
   .product * {
     color: #FFF; }
   .product .number {
-    background-color: #6eb7c2;
     justify-content: center;
     font-size: 2.82em;
     height: 1em; }
@@ -122,12 +126,7 @@ nav.navbar-default .brand {
   border-radius: 0;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  border-top: #6eb7c2;
-  border-right: #6eb7c2;
-  border-left: #6eb7c2;
-  border-bottom: #6eb7c2;
   border-size: 1px;
-  border-style: solid;
-  color: #6eb7c2; }
+  border-style: solid; }
 
 /*# sourceMappingURL=main.css.map */
